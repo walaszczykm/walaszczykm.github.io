@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.navigation {
+  float: right;
+
+  // Menu links
+  a {
+    display: inline-block;
+    padding: 0 $factor;
+    text-decoration: none;
+    color: white;
+    line-height: $header-height;
+    font-size: $header-font-size;
+    letter-spacing: $header-letter-spacing;
+
+    &:hover {
+      color: $secondary-color-light;
+    }
+
+    &[active] {
+      &:hover {
+        color: white;
+      }
+      background-color: $secondary-color;
+    }
+  }
+}

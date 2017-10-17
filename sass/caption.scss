@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: 6px;
+
+  .border {
+    background-color: $secondary-color;
+    color: $text-color-secondary;
+    padding: ($factor * 2) ($factor * 8);
+  }
+}

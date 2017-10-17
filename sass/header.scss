@@ -1,0 +1,21 @@
+@import 'variables.scss';
+
+.header {
+  box-sizing: border-box;
+  padding: 0 ($factor * 4);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  z-index: 100;
+  background-color: $primary-color;
+
+  // Page title
+  .page-title {
+    float: left;
+    color: white;
+    line-height: $header-height;
+    letter-spacing: $header-letter-spacing;
+    font-size: $header-font-size;
+  }
+}
