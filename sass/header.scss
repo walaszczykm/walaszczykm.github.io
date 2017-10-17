@@ -11,7 +11,7 @@
   background-color: $primary-color;
 
   // Page title
-  .page-title {
+  &__title {
     float: left;
     color: white;
     line-height: $header-height;
