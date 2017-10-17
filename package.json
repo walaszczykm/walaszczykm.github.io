@@ -1,0 +1,29 @@
+{
+  "name": "walaszczykm.github.io",
+  "version": "0.1.0",
+  "description": "My personal website using github pages",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walaszczykm/walaszczykm.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "github",
+    "pages"
+  ],
+  "author": "Maciej Walaszczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/walaszczykm/walaszczykm.github.io/issues"
+  },
+  "homepage": "https://github.com/walaszczykm/walaszczykm.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
