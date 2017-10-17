@@ -8,10 +8,10 @@
   text-align: center;
   font-size: 48px;
   letter-spacing: 6px;
-
+  
   .border {
     background-color: $secondary-color;
-    color: $text-color-secondary;
+    color: $text-color;
     padding: ($factor * 2) ($factor * 8);
   }
 }
