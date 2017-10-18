@@ -1,5 +1,10 @@
 'use strict;'
 
+// Assign forEach to NodeList prototype from Array prototype For IE support
+if (!('forEach' in NodeList.prototype)) {
+  NodeList.prototype.forEach = Array.prototype.forEach
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   var pages = document.querySelectorAll('.page')
   var links = document.querySelectorAll('.navigation__link')
