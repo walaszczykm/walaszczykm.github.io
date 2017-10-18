@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+.page {
+  overflow: hidden;
+
+  [hidden] {
+    display: none;
+  }
+}
