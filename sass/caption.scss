@@ -3,7 +3,7 @@
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 30%;
   width: 100%;
   text-align: center;
   font-size: 48px;
@@ -12,6 +12,19 @@
   &__border {
     background-color: $secondary-color;
     color: $text-color;
-    padding: ($factor * 2) ($factor * 8);
+    padding: ($factor * 2) ($factor * 4);
+  }
+
+  &__profile-img {
+    position: relative;
+    bottom: $factor;
+    background: $profile-img;
+    background-size: cover;
+    top: 1px;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    border-radius: 50%;
+    border: solid $factor $primary-color-dark;
   }
 }

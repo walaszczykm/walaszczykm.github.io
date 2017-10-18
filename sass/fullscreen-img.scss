@@ -3,9 +3,6 @@
 .fullscreen-img {
   margin: 0;
   padding: 0;
-  background: $start-bg-img no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: $start-bg-img no-repeat center center fixed;
   background-size: cover;
 }
