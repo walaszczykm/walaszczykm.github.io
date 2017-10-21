@@ -8,17 +8,16 @@
   padding: $factor / 2 $factor;
   margin: 0 $factor;
   border-radius: 3px;
-  font-weight: bold;
 
   &:hover {
-    background-color: $primary-color-light;
+    background-color: $primary-color;
   }
 
   &--secondary {
     background-color: $secondary-color;
 
     &:hover {
-      background-color: $secondary-color-light;
+      background-color: $secondary-color;
     }
   }
 }

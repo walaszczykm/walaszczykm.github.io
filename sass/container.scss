@@ -5,4 +5,8 @@
   padding: 0 ($factor * 4);
   padding-top: $header-height;
   width: 100%;
+
+  h2 {
+    font-size: 32px;
+  }
 }
