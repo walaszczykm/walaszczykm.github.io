@@ -11,6 +11,7 @@
     line-height: $header-height;
     font-size: $header-font-size;
     letter-spacing: $header-letter-spacing;
+    transition: color $fade-time;
 
     &:hover {
       color: $secondary-color-light;
