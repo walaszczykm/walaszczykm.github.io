@@ -17,7 +17,7 @@
       color: $secondary-color-light;
     }
 
-    &[active] {
+    &[selected] {
       color: white;
       background-color: $secondary-color;
     }
