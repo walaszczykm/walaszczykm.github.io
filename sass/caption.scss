@@ -32,7 +32,7 @@
     position: relative;
     animation: slideUp $slide-time;
     background-color: $secondary-color;
-    color: $text-color;
+    color: white;
     padding: ($factor * 2) ($factor * 4);
   }
 
@@ -46,6 +46,6 @@
     height: 250px;
     margin: auto;
     border-radius: 50%;
-    border: solid $factor $primary-color-dark;
+    border: solid $factor $primary-color;
   }
 }

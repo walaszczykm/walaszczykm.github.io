@@ -14,11 +14,11 @@
     transition: color $fade-time;
 
     &:hover {
-      color: $secondary-color-light;
+      border-bottom: solid 3px $secondary-color;
     }
 
     &[selected] {
-      color: white;
+      border-bottom: none;
       background-color: $secondary-color;
     }
   }
