@@ -1,6 +1,7 @@
 @import './variables.scss';
 
 .fullscreen-img {
+  z-index: 0;
   margin: 0;
   padding: 0;
   width: 100vw;
