@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+.btn {
+  line-height: $header-height;
+  text-decoration: none;
+  color: white;
+  background-color: $primary-color;
+  padding: $factor / 2 $factor;
+  margin: 0 $factor;
+  border-radius: 3px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $primary-color-light;
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: $secondary-color-light;
+    }
+  }
+}
