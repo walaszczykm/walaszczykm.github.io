@@ -1,9 +1,6 @@
 @import './variables.scss';
 
 .container {
-  margin: 0;
+  margin: 0 ($factor * 4);
   margin-top: $header-height;
-  padding: 0 ($factor * 4);
-  padding-top: $factor * 2;
-  width: 100%;
 }

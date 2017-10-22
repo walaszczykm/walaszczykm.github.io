@@ -9,11 +9,79 @@
   }
 }
 
+@keyframes slide-left {
+  from {
+    right: 50px;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    left: 50px;
+  }
+
+  to {
+    left: 0;
+  }
+}
+
 .page {
   overflow: hidden;
   animation: fadein $fade-time;
 
   &__header {
-    font-size: 32px;
+    display: inline-block;
+    margin: 0;
+    padding: (4 * $factor) 0;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .page__section-wrapper {
+    text-align: center;
+  }
+
+  .page__section {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 500px;
+    margin: $factor * 2;
+    padding: $factor * 2;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+
+    &--left {
+      position: relative;
+      animation: slide-left $slide-time;
+    }
+
+    &--right {
+      position: relative;
+      animation: slide-right $slide-time;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+    }
+    
+    h3 {
+      margin: $factor * 2;
+      color: $secondary-color;
+      font-size: 32px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 $factor * 2;
+      text-align: justify;
+    }
   }
 }
