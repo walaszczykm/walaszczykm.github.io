@@ -12,4 +12,8 @@
 .page {
   overflow: hidden;
   animation: fadein $fade-time;
+
+  &__header {
+    font-size: 32px;
+  }
 }

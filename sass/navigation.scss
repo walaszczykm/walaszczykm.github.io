@@ -17,7 +17,7 @@
       border-bottom: solid 3px $secondary-color;
     }
 
-    &[selected] {
+    &--active {
       border-bottom: none;
       background-color: $secondary-color;
     }

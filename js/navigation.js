@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     links.forEach(function (link) {
       if (link.hash === hash) {
-        link.setAttribute('selected', '')
+        link.classList.add('navigation__link--active')
       } else {
-        link.removeAttribute('selected')
+        link.classList.remove('navigation__link--active')
       }
     })
   }
