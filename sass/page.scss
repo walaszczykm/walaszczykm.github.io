@@ -41,6 +41,15 @@
     text-align: center;
     font-size: 48px;
     font-weight: 700;
+
+    &--sub {
+      margin: 0;
+      padding: $factor 0;
+      font-size: 38px;
+      font-weight: 400;
+      color: $secondary-color;
+      border-bottom: solid 3px $primary-color;
+    }
   }
   
   .page__section-wrapper {
@@ -69,7 +78,7 @@
       display: block;
       margin: auto;
     }
-    
+
     h3 {
       margin: $factor * 2;
       color: $secondary-color;
