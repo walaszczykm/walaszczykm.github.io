@@ -3,4 +3,9 @@
 .container {
   margin: 0 ($factor * 4);
   margin-top: $header-height;
+
+  @media screen and (max-width: $tablet){
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

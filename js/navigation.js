@@ -8,6 +8,7 @@ if (!('forEach' in NodeList.prototype)) {
 document.addEventListener('DOMContentLoaded', function () {
   var pages = document.querySelectorAll('.page')
   var links = document.querySelectorAll('.navigation__link')
+  var nav = document.querySelector('.navigation')
 
   var navigateTo = function (hash) {
     if (hash === '#' || hash === '') {
@@ -35,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if ('hash' in event.target) {
       navigateTo(event.target.hash)
     }
+
+    nav.classList.toggle('open')
   }
 
   links.forEach(function (link) {
