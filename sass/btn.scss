@@ -9,6 +9,10 @@
   margin: 0 $factor;
   border-radius: 3px;
 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   &:hover {
     background-color: $primary-color;
   }

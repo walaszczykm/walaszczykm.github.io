@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  height: $header-height;
+  min-height: $header-height;
   z-index: 100;
   background-color: $primary-color-dark;
   box-shadow: 0 0 9px 0 rgba(0,0,0,.3);
@@ -18,5 +18,11 @@
     letter-spacing: 1px;
     line-height: $header-height;
     font-size: $header-font-size;
+
+    @media screen and (max-width: $mobile-l) {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
   }
 }
