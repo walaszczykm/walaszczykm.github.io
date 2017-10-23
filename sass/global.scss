@@ -24,3 +24,12 @@ body {
 .right {
   float: right;
 }
+
+.link {
+  text-decoration: none;
+  color: $secondary-color;
+
+  &:hover {
+    color: $secondary-color-light;
+  }
+}
