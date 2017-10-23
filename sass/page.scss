@@ -84,11 +84,19 @@
     &--left {
       position: relative;
       animation: slide-left $slide-time;
+
+      @media screen and (max-width: $mobile-l){
+        animation: none;
+      }
     }
 
     &--right {
       position: relative;
       animation: slide-right $slide-time;
+
+      @media screen and (max-width: $mobile-l){
+        animation: none;
+      }
     }
 
     img {
@@ -102,6 +110,10 @@
       font-size: 32px;
       font-weight: 400;
       text-align: center;
+
+      @media screen and (max-width: $tablet){
+        font-size: 24px;
+      }
     }
 
     p {

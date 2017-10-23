@@ -2,7 +2,7 @@
 
 .menu-btn {
   position: fixed;
-  top: $factor;
+  top: $factor - 2;
   right: $factor * 2;
   display: none;
   color: white;
