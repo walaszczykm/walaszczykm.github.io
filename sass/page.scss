@@ -42,6 +42,10 @@
     font-size: 48px;
     font-weight: 700;
 
+    @media screen and (max-width: $tablet){
+      padding: (2 * $factor) 0;
+    }
+
     &--sub {
       margin: 0;
       padding: $factor 0;
@@ -63,6 +67,19 @@
     margin: $factor * 2;
     padding: $factor * 2;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+
+    @media screen and (max-width: $laptop){
+      width: 300px;
+    }
+
+    @media screen and (max-width: $tablet){
+      margin: $factor;
+      padding: $factor;
+    }
+
+    @media screen and (max-width: $mobile-l){
+      width: auto;
+    }
 
     &--left {
       position: relative;
@@ -91,6 +108,14 @@
       margin: 0;
       padding: 0 $factor * 2;
       text-align: justify;
+
+      @media screen and (max-width: $tablet){
+        padding: $factor;
+      }
+
+      @media screen and (max-width: $mobile-l){
+        padding: 0;
+      }
     }
   }
 }

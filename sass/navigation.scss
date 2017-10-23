@@ -7,6 +7,7 @@
   display: none;
   color: white;
   font-size: $header-font-size;
+  cursor: pointer;
 
   @media screen and (max-width: $tablet) {
     display: block;
@@ -47,9 +48,11 @@
     font-size: $header-font-size;
     letter-spacing: $header-letter-spacing;
     transition: color $fade-time;
+    border-bottom: solid 3px $primary-color-dark;
 
     @media screen and (max-width: $tablet) {
       width: 100%;
+      border: none;
     }
 
     &:hover {
@@ -63,6 +66,10 @@
     &--active {
       border-bottom: none;
       background-color: $secondary-color;
+      border-bottom: solid 3px $secondary-color;
+      @media screen and (max-width: $tablet) {
+        border: none;
+      }
     }
   }
 }
