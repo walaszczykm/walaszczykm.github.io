@@ -29,3 +29,9 @@ $profile-img: url('/img/profile.jpg');
 // ***** Animations *****
 $fade-time: 0.25s;
 $slide-time: 0.75s;
+
+//***** Media query break points
+$tablet: 768px;
+$mobile-l: 425px;
+$mobile-m: 375px;
+$mobile-s: 320px;

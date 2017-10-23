@@ -1,8 +1,43 @@
 @import './variables.scss';
 
+.menu-btn {
+  position: fixed;
+  top: $factor;
+  right: $factor * 2;
+  display: none;
+  color: white;
+  font-size: $header-font-size;
+
+  @media screen and (max-width: $tablet) {
+    display: block;
+  }
+}
+
 .navigation {
   float: right;
   
+  @media screen and (max-width: $tablet) {
+    display: none;
+    width: 100%;
+    text-align: center;
+
+    &.open {
+      display: block;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      @media screen and (max-width: $tablet) {
+        display: block;
+      }
+    }
+  }
+
   &__link {
     display: inline-block;
     padding: 0 $factor;
@@ -13,8 +48,16 @@
     letter-spacing: $header-letter-spacing;
     transition: color $fade-time;
 
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
+
     &:hover {
       border-bottom: solid 3px $secondary-color;
+
+      @media screen and (max-width: $tablet) {
+        border: none;
+      }
     }
 
     &--active {
