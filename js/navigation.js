@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
       hash = '#' + pages[0].id
     }
 
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Navigation',
+      eventAction: 'navigate to',
+      eventLabel: hash
+    })
+
     pages.forEach(function (page) {
       if (('#' + page.id) === hash) {
         page.removeAttribute('hidden')

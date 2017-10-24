@@ -6,5 +6,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
   btn.addEventListener('click', function (event) {
     nav.classList.toggle('open')
+
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Navigation',
+      eventAction: 'mobile nav menu triggered'
+    })
   })
+
+  if (window.performance) {
+    var timeSincePageLoad = Math.round(window.performance.now())
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Timing',
+      eventAction: 'page loaded',
+      eventValue: timeSincePageLoad
+    })
+  }
 })
